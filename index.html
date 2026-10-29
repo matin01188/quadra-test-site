@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت تمرینی QA | نسخه مرتب</title>
+<meta name="description" content="وب‌سایت آزمایشی فارسی و راست‌چین برای تمرین تست کیفیت">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- نوار بالای سایت: اطلاعات تماس -->
+<div class="topbar">
+<div class="container topbar-inner">
+<span>سایت تمرینی تحویل به مشتری</span>
+<span class="topbar-links">
+<a href="mailto:info@test.ir" data-testid="link-email-top">info@test.ir</a>
+<span>|</span>
+<a href="tel:+982112345678" dir="ltr" data-testid="link-phone-top">+98 21 1234 5678</a>
+</span>
+</div>
+</div>
+
+<!-- هدر و منو -->
+<header class="header">
+<div class="container header-inner">
+<a href="index.html" class="logo" data-testid="logo">سایت تمرینی QA</a>
+<button id="menuBtn" class="menu-btn" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+<nav id="mainNav" class="nav" aria-label="منوی اصلی">
+<a href="#home" data-testid="nav-home">خانه</a>
+<a href="#links" data-testid="nav-links">لینک‌ها</a>
+<a href="#buttons" data-testid="nav-buttons">دکمه‌ها</a>
+<a href="#contact" data-testid="nav-contact">تماس</a>
+<a href="#login" data-testid="nav-login">ورود</a>
+<a href="about.html" data-testid="nav-about">درباره</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<!-- بخش معرفی -->
+<section id="home" class="hero">
+<div class="hero-text">
+<span class="badge">نسخه مرتب • راست‌چین • واکنش‌گرا</span>
+<h1>تمرین تست کیفیت سایت فارسی</h1>
+<p>همه دکمه‌ها و لینک‌ها عملکرد واقعی دارند. فرم‌ها اعتبارسنجی می‌شوند و ارسال واقعی ندارند.</p>
+<div class="row">
+<a href="#contact" class="btn primary" data-testid="cta-contact">رفتن به فرم تماس</a>
+<a href="about.html" class="btn" data-testid="cta-about">صفحه داخلی درباره</a>
+<a href="404.html" class="btn ghost" data-testid="cta-404">تست صفحه ۴۰۴</a>
+</div>
+</div>
+<div class="hero-side">
+<h3>اطلاعات ورود ساختگی</h3>
+<p>ایمیل: <b dir="ltr">demo@test.ir</b></p>
+<p>رمز: <b dir="ltr">Demo1234</b></p>
+<p class="hint">بدون بک‌اند واقعی، فقط برای تست پیام موفقیت و خطا</p>
+</div>
+</section>
+
+<!-- سه ویژگی اصلی -->
+<section class="grid-3">
+<div class="mini-card"><h3>لینک‌ها</h3><p>داخلی، خارجی، ایمیل و تلفن قابل کلیک برای تست ناوبری.</p></div>
+<div class="mini-card"><h3>فرم‌ها</h3><p>اعتبارسنجی فارسی با خطای واضح و وضعیت موفقیت و خطا.</p></div>
+<div class="mini-card"><h3>موبایل</h3><p>منوی همبرگری و چیدمان تک‌ستونه برای تست واکنش‌گرایی.</p></div>
+</section>
+
+<!-- لینک‌ها -->
+<section id="links" class="card">
+<h2>لینک‌های داخلی و خارجی</h2>
+<div class="two-col">
+<div>
+<h3>داخلی</h3>
+<ul>
+<li><a href="#contact" data-testid="link-internal-contact">رفتن به بخش تماس</a></li>
+<li><a href="#login" data-testid="link-internal-login">رفتن به بخش ورود</a></li>
+<li><a href="about.html" data-testid="link-internal-about">صفحه درباره (about.html)</a></li>
+<li><a href="404.html" data-testid="link-internal-404">صفحه ۴۰۴ (404.html)</a></li>
+</ul>
+</div>
+<div>
+<h3>خارجی و تماس</h3>
+<ul>
+<li><a href="https://hoosha.com" target="_blank" rel="noopener" data-testid="link-external-hoosha">hoosha.com در تب جدید</a></li>
+<li><a href="https://example.com" target="_blank" rel="noopener" data-testid="link-external-example">example.com در تب جدید</a></li>
+<li><a href="mailto:info@test.ir" data-testid="link-email">ایمیل: info@test.ir</a></li>
+<li><a href="tel:+982112345678" data-testid="link-phone">تلفن: <span dir="ltr">+98 21 1234 5678</span></a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- دکمه‌ها -->
+<section id="buttons" class="card">
+<h2>دکمه‌ها با عملکرد واقعی</h2>
+<div class="row">
+<button id="themeBtn" class="btn" data-testid="btn-theme">تغییر تم روشن / تیره</button>
+<button id="counterBtn" class="btn" data-testid="btn-counter">شمارنده: <span id="counterVal">۰</span></button>
+<button id="toggleBtn" class="btn" data-testid="btn-toggle">نمایش / مخفی متن</button>
+<button id="copyBtn" class="btn" data-testid="btn-copy">کپی ایمیل</button>
+<button id="topBtn" class="btn primary" data-testid="btn-top">بازگشت به بالا</button>
+</div>
+<p id="toggleText" class="toggle-text">این متن برای تست نمایش و مخفی‌شدن است.</p>
+<p id="copyMsg" class="hint" aria-live="polite"></p>
+</section>
+
+<!-- فرم‌ها کنار هم در دسکتاپ -->
+<div class="forms-grid">
+<section id="contact" class="card">
+<h2>فرم تماس</h2>
+<p class="hint">ارسال واقعی ندارد. فقط اعتبارسنجی و پیام شبیه‌سازی‌شده.</p>
+<form id="contactForm" novalidate>
+<div class="field">
+<label for="cName">نام *</label>
+<input type="text" id="cName" placeholder="مثلاً سارا محمدی" data-testid="input-contact-name">
+<small class="error-text" id="err-cName"></small>
+</div>
+<div class="field">
+<label for="cEmail">ایمیل *</label>
+<input type="email" id="cEmail" dir="ltr" placeholder="you@test.ir" data-testid="input-contact-email">
+<small class="error-text" id="err-cEmail"></small>
+</div>
+<div class="field">
+<label for="cMsg">پیام * (حداقل ۱۰ حرف)</label>
+<textarea id="cMsg" rows="4" placeholder="متن پیام..." data-testid="input-contact-msg"></textarea>
+<small class="error-text" id="err-cMsg"></small>
+</div>
+<button type="submit" class="btn primary" data-testid="btn-contact-submit">ارسال پیام</button>
+<button type="reset" class="btn" data-testid="btn-contact-reset">پاک کردن</button>
+<div id="contactResult" class="result" aria-live="polite"></div>
+</form>
+</section>
+
+<section id="login" class="card">
+<h2>ورود آزمایشی</h2>
+<p class="hint">فقط با <b dir="ltr">demo@test.ir</b> و <b dir="ltr">Demo1234</b> تست کنید.</p>
+<form id="loginForm" novalidate>
+<div class="field">
+<label for="lEmail">ایمیل *</label>
+<input type="email" id="lEmail" dir="ltr" placeholder="demo@test.ir" data-testid="input-login-email">
+<small class="error-text" id="err-lEmail"></small>
+</div>
+<div class="field">
+<label for="lPass">رمز عبور * (حداقل ۶ حرف)</label>
+<div class="pass-row">
+<input type="password" id="lPass" dir="ltr" placeholder="Demo1234" data-testid="input-login-pass">
+<button type="button" id="showPass" class="btn small" data-testid="btn-showpass">نمایش</button>
+</div>
+<small class="error-text" id="err-lPass"></small>
+</div>
+<button type="submit" class="btn primary" data-testid="btn-login-submit">ورود</button>
+<div id="loginResult" class="result" aria-live="polite"></div>
+</form>
+</section>
+</div>
+
+<section class="card note-card">
+<h2>شفافیت فنی</h2>
+<p>این سایت بک‌اند ندارد. دکمه‌ها و اعتبارسنجی‌ها واقعی‌اند، ولی ثبت فرم، ارسال ایمیل و پیامک و ورود واقعی پیاده‌سازی نشده است.</p>
+</section>
+</main>
+
+<!-- فوتر -->
+<footer class="footer">
+<div class="container footer-grid">
+<div><h3>سایت تمرینی QA</h3><p>© <span id="year"></span> ساخته‌شده برای آموزش تست تحویل به مشتری</p></div>
+<div><h3>دسترسی سریع</h3><p><a href="#links">لینک‌ها</a> • <a href="#buttons">دکمه‌ها</a> • <a href="about.html">درباره</a> • <a href="404.html">۴۰۴</a></p></div>
+<div><h3>تماس</h3><p><a href="mailto:info@test.ir">info@test.ir</a><br><a href="tel:+982112345678" dir="ltr">+98 21 1234 5678</a></p></div>
+</div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
